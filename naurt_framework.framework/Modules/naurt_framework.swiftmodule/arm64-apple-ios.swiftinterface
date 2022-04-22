@@ -12,7 +12,7 @@ import Zip
 import _Concurrency
 @_exported import naurt_framework
 public struct NaurtLocation {
-  public var timestamp: Swift.UInt64
+  public var timestamp: Swift.Double
   public var longitude: Swift.Double
   public var latitude: Swift.Double
   public var altitude: Swift.Double
