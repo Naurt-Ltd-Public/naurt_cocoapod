@@ -14,5 +14,5 @@ FOUNDATION_EXPORT double naurt_frameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char naurt_frameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <naurt_framework/PublicHeader.h>
-#import <ios_sdkFFI.h>
+#import <naurt_framework/ios_sdkFFI.h>
 
