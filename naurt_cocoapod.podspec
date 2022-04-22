@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "naurt_cocoapod"
-    s.version      = "0.3.0"
+    s.version      = "0.4.0"
     s.summary      = "Naurt's official cocoapod sdk"
     s.description  = "Naurt's official cocoapod sdk, wrapping the ios framework into a cocoapod for legacy systems"
     s.homepage     = "https://www.naurt.com"
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
         # 'ENABLE_BITCODE' => 'NO'
         'SDKROOT' => 'iphoneos',
         'SUPPORTED_PLATFORMS' => 'iphoneos',
-        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' = 'YES'
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
     }
 
     s.swift_version = "5.0"
@@ -39,7 +39,8 @@ Pod::Spec.new do |s|
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64 armv7',
         'ENABLE_BITCODE' => 'NO',
         'SDKROOT' => 'iphoneos',
-        'SUPPORTED_PLATFORMS' => 'iphoneos'
+        'SUPPORTED_PLATFORMS' => 'iphoneos',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
     }
     s.user_target_xcconfig = { 
         'VALID_ARCHS' => 'arm64 armv7',
@@ -47,7 +48,8 @@ Pod::Spec.new do |s|
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64 armv7',
         'ENABLE_BITCODE' => 'NO',
         'SDKROOT' => 'iphoneos',
-        'SUPPORTED_PLATFORMS' => 'iphoneos'
+        'SUPPORTED_PLATFORMS' => 'iphoneos',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
     }
 
     # s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
