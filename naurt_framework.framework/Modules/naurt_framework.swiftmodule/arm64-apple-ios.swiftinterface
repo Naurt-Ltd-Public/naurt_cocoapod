@@ -119,10 +119,10 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $journeyUuid: Combine.Published<Foundation.UUID?>.Publisher {
     get
   }
-  @Combine.Published @_projectedValueProperty($trackingStatusc) final public var trackingStatusc: naurt_framework.NaurtTrackingStatus {
+  @Combine.Published @_projectedValueProperty($trackingStatus) final public var trackingStatus: naurt_framework.NaurtTrackingStatus {
     get
   }
-  final public var $trackingStatusc: Combine.Published<naurt_framework.NaurtTrackingStatus>.Publisher {
+  final public var $trackingStatus: Combine.Published<naurt_framework.NaurtTrackingStatus>.Publisher {
     get
   }
   final public func initialise(apiKey: Swift.String, precision: Swift.Int)
