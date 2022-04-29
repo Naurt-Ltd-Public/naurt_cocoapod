@@ -29,7 +29,7 @@ public struct rawLocation {
   public var longitude: Swift.Double
   public var timestamp: Swift.UInt64
 }
-public enum NaurtTrackingStatus {
+public enum NaurtTrackingStatus : Swift.String {
   case FULL
   case DEGRADED
   case COMPROMISED
@@ -44,9 +44,9 @@ public enum NaurtTrackingStatus {
   case NOT_RUNNING
   case STOPPED
   case PAUSED
-  public static func == (a: naurt_framework.NaurtTrackingStatus, b: naurt_framework.NaurtTrackingStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -119,10 +119,10 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $journeyUuid: Combine.Published<Foundation.UUID?>.Publisher {
     get
   }
-  @Combine.Published @_projectedValueProperty($trackingStatus) final public var trackingStatus: naurt_framework.NaurtTrackingStatus {
+  @Combine.Published @_projectedValueProperty($trackingStatusc) final public var trackingStatusc: naurt_framework.NaurtTrackingStatus {
     get
   }
-  final public var $trackingStatus: Combine.Published<naurt_framework.NaurtTrackingStatus>.Publisher {
+  final public var $trackingStatusc: Combine.Published<naurt_framework.NaurtTrackingStatus>.Publisher {
     get
   }
   final public func initialise(apiKey: Swift.String, precision: Swift.Int)
@@ -142,3 +142,4 @@ public enum IosSdkLifecycle {
 }
 extension naurt_framework.NaurtTrackingStatus : Swift.Equatable {}
 extension naurt_framework.NaurtTrackingStatus : Swift.Hashable {}
+extension naurt_framework.NaurtTrackingStatus : Swift.RawRepresentable {}
