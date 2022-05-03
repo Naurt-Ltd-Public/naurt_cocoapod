@@ -89,6 +89,12 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $sessionState: Combine.Published<Swift.String>.Publisher {
     get
   }
+  @Combine.Published @_projectedValueProperty($glogState) final public var glogState: Swift.String {
+    get
+  }
+  final public var $glogState: Combine.Published<Swift.String>.Publisher {
+    get
+  }
   @Combine.Published @_projectedValueProperty($locationPermission) final public var locationPermission: CoreLocation.CLAuthorizationStatus {
     get
   }
