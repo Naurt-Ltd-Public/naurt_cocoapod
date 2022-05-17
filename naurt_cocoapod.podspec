@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = "naurt_cocoapod"
-    s.version      = "0.6.2"
+    s.version      = "0.6.3
+"
     s.summary      = "Naurt's official cocoapod sdk"
     s.description  = "Naurt's official cocoapod sdk, wrapping the ios framework into a cocoapod for legacy systems"
     s.homepage     = "https://www.naurt.com"

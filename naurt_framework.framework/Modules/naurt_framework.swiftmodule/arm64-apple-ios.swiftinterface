@@ -29,6 +29,27 @@ public struct rawLocation {
   public var longitude: Swift.Double
   public var timestamp: Swift.UInt64
 }
+public enum NaurtTrackingStatus : Swift.String {
+  case FULL
+  case DEGRADED
+  case COMPROMISED
+  case INOPERABLE
+  case INVALID
+  case UNKNOWN
+  case ALREADY_RUNNING
+  case NOT_INITIALISED
+  case NO_PERMISSION
+  case LOCATION_NOT_ENABLED
+  case MINIMAL
+  case NOT_RUNNING
+  case STOPPED
+  case PAUSED
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 final public class Naurt : Foundation.ObservableObject {
   public init()
   public static let shared: naurt_framework.Naurt
@@ -68,6 +89,12 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $sessionState: Combine.Published<Swift.String>.Publisher {
     get
   }
+  @Combine.Published @_projectedValueProperty($glogState) final public var glogState: Swift.String {
+    get
+  }
+  final public var $glogState: Combine.Published<Swift.String>.Publisher {
+    get
+  }
   @Combine.Published @_projectedValueProperty($locationPermission) final public var locationPermission: CoreLocation.CLAuthorizationStatus {
     get
   }
@@ -98,6 +125,12 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $journeyUuid: Combine.Published<Foundation.UUID?>.Publisher {
     get
   }
+  @Combine.Published @_projectedValueProperty($trackingStatus) final public var trackingStatus: Swift.String {
+    get
+  }
+  final public var $trackingStatus: Combine.Published<Swift.String>.Publisher {
+    get
+  }
   final public func initialise(apiKey: Swift.String, precision: Swift.Int)
   final public func start()
   final public func stop()
@@ -113,3 +146,6 @@ public func iosNewReadings(inState: [Swift.UInt8], sensorBuffer: [[Swift.Double]
 public func checksum(input: [Swift.UInt8]) -> Swift.String
 public enum IosSdkLifecycle {
 }
+extension naurt_framework.NaurtTrackingStatus : Swift.Equatable {}
+extension naurt_framework.NaurtTrackingStatus : Swift.Hashable {}
+extension naurt_framework.NaurtTrackingStatus : Swift.RawRepresentable {}
