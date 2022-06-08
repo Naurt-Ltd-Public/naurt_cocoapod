@@ -46,35 +46,35 @@ typedef struct RustCallStatus {
 // ⚠️ increment the version suffix in all instances of UNIFFI_SHARED_HEADER_V4 in this file.           ⚠️
 #endif // def UNIFFI_SHARED_H
 
-RustBuffer ios_sdk_5090_ios_default_state(
+RustBuffer ios_sdk_4ef_ios_default_state(
       
     RustCallStatus *_Nonnull out_status
     );
-RustBuffer ios_sdk_5090_publish_positions(
+RustBuffer ios_sdk_4ef_publish_positions(
       RustBuffer in_state,
     RustCallStatus *_Nonnull out_status
     );
-RustBuffer ios_sdk_5090_ios_new_readings(
+RustBuffer ios_sdk_4ef_ios_new_readings(
       RustBuffer in_state,RustBuffer sensor_buffer,
     RustCallStatus *_Nonnull out_status
     );
-RustBuffer ios_sdk_5090_checksum(
+RustBuffer ios_sdk_4ef_checksum(
       RustBuffer input,
     RustCallStatus *_Nonnull out_status
     );
-RustBuffer ffi_ios_sdk_5090_rustbuffer_alloc(
+RustBuffer ffi_ios_sdk_4ef_rustbuffer_alloc(
       int32_t size,
     RustCallStatus *_Nonnull out_status
     );
-RustBuffer ffi_ios_sdk_5090_rustbuffer_from_bytes(
+RustBuffer ffi_ios_sdk_4ef_rustbuffer_from_bytes(
       ForeignBytes bytes,
     RustCallStatus *_Nonnull out_status
     );
-void ffi_ios_sdk_5090_rustbuffer_free(
+void ffi_ios_sdk_4ef_rustbuffer_free(
       RustBuffer buf,
     RustCallStatus *_Nonnull out_status
     );
-RustBuffer ffi_ios_sdk_5090_rustbuffer_reserve(
+RustBuffer ffi_ios_sdk_4ef_rustbuffer_reserve(
       RustBuffer buf,int32_t additional,
     RustCallStatus *_Nonnull out_status
     );
