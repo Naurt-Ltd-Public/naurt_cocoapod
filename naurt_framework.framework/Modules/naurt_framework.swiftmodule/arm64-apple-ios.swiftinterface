@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name naurt_framework
 import Combine
 import CoreLocation
 import CoreMotion
+import Dispatch
 import Foundation
 import QuartzCore
 import Swift
@@ -131,7 +132,7 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $trackingStatus: Combine.Published<Swift.String>.Publisher {
     get
   }
-  final public func initialise(apiKey: Swift.String, precision: Swift.Int)
+  final public func initialise(apiKey: Swift.String)
   final public func start()
   final public func stop()
   final public func pause()

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/naurt_framework-Swift.h</key>
 		<data>
-		e+TTJCkUydDFxFwLgZGbE0tvyAQ=
+		aBIEp8SYH//0fMPLVrPFozWkplU=
 		</data>
 		<key>Headers/naurt_framework.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aLcK9ckjSmwl0YYUTHVpMHBqiek=
+		WzrrH6VxLCnz00snAQ4p0gdA5xc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/naurt_framework.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		7C1ijlzygf9xE3BL8queSrpRRtU=
+		4U32hKAzcI9q35/PKpdfAHG1goI=
 		</data>
 		<key>Modules/naurt_framework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Iio09KktJ9r/iZ/3cjBEovDyUFI=
+		tkY874KbOV8a5F0NupRr3XoGspM=
 		</data>
 		<key>Modules/naurt_framework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4maXHGbYOHMFoLZs5RXlfjUB8Ak=
+		1sFHP8If0mpTUNVI8KFsRtjlUrE=
 		</data>
 		<key>Modules/naurt_framework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8rszvUBuZGf/cGJjJfelrwIJInc=
+		X3wiZGr5TyUTfAW0yVSChIkOijA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z9SizLtdPtjbiP8oIt1r8+7Jj5BtlCnLPgpfYT5dxnU=
+			BDIVWvkJ5t2mMs8KY50MERSkmgOJLL+6kVPIWpTFLeM=
 			</data>
 		</dict>
 		<key>Headers/naurt_framework.h</key>
@@ -75,28 +75,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eNzu0JdLyGG7yioqwD+5Ihiaaa5HImkuelKUisA7LEo=
+			gMJcR5fiK2TS5H9ym1MkmMIeQS9hL9GwSTURr3apskg=
 			</data>
 		</dict>
 		<key>Modules/naurt_framework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5GPIKYaD7Clhmpal75ZdepLLGlkLA8rtRP78Aw08EAs=
+			TJb/EVHMszPWhGa9Kwzj0RWCSvqklgaGsaF/qzXzZeU=
 			</data>
 		</dict>
 		<key>Modules/naurt_framework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xghRK4sbhrya/iL6dZZ5zuWTKBPzleUzHCDyQhAW9AY=
+			jAtTt/R0XGwe1MQQd4HEm/IItjoYvU2eAVSNc3vQQ3c=
 			</data>
 		</dict>
 		<key>Modules/naurt_framework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0IDgOn9dw3jZkBfd7R25sF2PgfLL2juoQMVqzmovfjY=
+			hw2Xejwo0Ev77rPWPnhJsQOgW6gyCuaGHUlALwbw2UI=
 			</data>
 		</dict>
 	</dict>
